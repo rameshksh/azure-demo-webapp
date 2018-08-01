@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<script>
+    function changeImage() {        
+        $('#image').attr('src', '/images/beach.jpeg');
+    }
+</script>
+
+<div class="row">
+    <br />
+    <p>
+        Click on submit to change image.
+    </p>
+    <div class="col-12">
+        <button id="changeImage" onclick="changeImage();">Submit</button>
+    </div>
+    <br />
+    <div class="col-12">
+        <img id="image" class="img-responsive" src="~/images/blank.jpeg" />
+    </div>
+</div>
